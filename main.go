@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"time"
-	"encoding/json"
 	"context"
 	"cloud.google.com/go/pubsub"
 )
