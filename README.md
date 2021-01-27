@@ -6,7 +6,7 @@ You have to create service account JSON file then export as Environment variable
     make get-credential PATH="[PATH]"
 ```
 
-### Example
+### Example ⛄️
 
 I'm create service account JSON file and name it `POC_SRVACC.json` then save as current directory then comand with
 
