@@ -53,11 +53,10 @@ func main() {
 	}
 	fmt.Println("msgID: ", msgID)
 
-	var data string
 	// Use a callback to receive messages via subscription1.
 	sub := client.Subscription(subName)
 	err = sub.Receive(ctx, func(ctx context.Context, m *pubsub.Message) {
-		fmt.Println(string(m.Data), data)	
+		fmt.Println(string(m.Data))	
 		m.Ack() // Acknowledge that we've consumed the message.
 	})
 	if err != nil {
